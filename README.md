@@ -4,6 +4,8 @@ A cross-platform lunar calendar app built with Flutter and Tyme.
 
 This is created out of the need for a simple, ad-free lunar calendar app.
 
+![Snapshot of the app](./assets/lunar-calendar-snapshot.jpeg)
+
 Download here : [Release v1.0.0](https://github.com/oliviawindsir/lunar-calendar/releases/tag/v1.0.0)
 
 ## Pain points: 
