@@ -7,11 +7,13 @@ This is created out of the need for a simple, ad-free lunar calendar app.
 ## Pain points: 
 - Google calendar interface looks bloated and messy when we add another alternate calendar. For elderly, it is hard to see and read, especially when there are public holidays and other events.
 - Calendar app from Android playstore has a lot of ads. One has to wait and watch for the ads before being able to view the calendar. 
-- Is the app they are using for my parents or less tech-savvy person to use?
+- Is this safe for my parents to use?
 
 ## Solution:
 - A darn simple, ad-free lunar calendar app that tells you the month and day of the lunar date.
 - Easy to use and understand. 
+- Ran through `osv-scanner`, `gitleaks` and `trivy` to ensure there are no security vulnerabilities. 
+- Scan using MobSF to ensure there are no critical security vulnerabilities. 
 
 ## Features: 
 - Main display is Gregorian calendar, followed by the lunar date in grey
@@ -70,7 +72,20 @@ No issues found
 ```
 
 ### trivy
+```
+Report Summary
 
+┌─────────────────────────────────────────────────┬──────┬─────────────────┬─────────┐
+│                     Target                      │ Type │ Vulnerabilities │ Secrets │
+├─────────────────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ .dart_tool/widget_preview_scaffold/pubspec.lock │ pub  │        0        │    -    │
+├─────────────────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ pubspec.lock                                    │ pub  │        0        │    -    │
+└─────────────────────────────────────────────────┴──────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+```
 
 ## Acknowledgements
 - [Tyme](https://pub.dev/packages/tyme) for providing the lunar calendar flutter package.
