@@ -1,16 +1,53 @@
 # flutter_lunar_calendar
 
-A new Flutter project.
+A cross-platform lunar calendar app built with Flutter and Tyme.
+
+This is created out of the need for a simple, ad-free lunar calendar app.
+
+## Pain points: 
+- Google calendar interface looks bloated and messy when we add another alternate calendar. For elderly, it is hard to see and read, especially when there are public holidays and other events.
+- Calendar app from Android playstore has a lot of ads. One has to wait and watch for the ads before being able to view the calendar. 
+- Is the app they are using for my parents or less tech-savvy person to use?
+
+## Solution:
+- A darn simple, ad-free lunar calendar app that tells you the month and day of the lunar date.
+- Easy to use and understand. 
+
+## Features: 
+- Main display is Gregorian calendar, followed by the lunar date in grey
+- Swipe left or right to navigate between months
+- Tap on a date to view the lunar date
+- Display lunar date and solar term below the date
+- That's it. Read-only. 
+
+## Future expansion
+- Does this display the public holiday of different countries?
+- Can I choose to set alert when it is nearing Day 1 and 15 of each lunar month? 
+- Can we have it in PWA so that I can add it to my home screen, without going through the playstore? 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Setup
+```bash
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+### Run
+```bash
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Build
+```bash
+flutter build apk
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Notes
+- This app has only been tested on the following platform: 
+  - Android (manually loading the .apk)
+  - Chrome
+
+
+## Acknowledgements
+- [Tyme](https://pub.dev/packages/tyme) for providing the lunar calendar flutter package.
+- [tyme4dart](https://github.com/6tail/tyme4dart) for providing the base calendar library.
