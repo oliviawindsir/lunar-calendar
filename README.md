@@ -4,6 +4,8 @@ A cross-platform lunar calendar app built with Flutter and Tyme.
 
 This is created out of the need for a simple, ad-free lunar calendar app.
 
+Download here : [Release v1.0.0](https://github.com/oliviawindsir/lunar-calendar/releases/tag/v1.0.0)
+
 ## Pain points: 
 - Google calendar interface looks bloated and messy when we add another alternate calendar. For elderly, it is hard to see and read, especially when there are public holidays and other events.
 - Calendar app from Android playstore has a lot of ads. One has to wait and watch for the ads before being able to view the calendar. 
@@ -48,44 +50,6 @@ flutter build apk
 - This app has only been tested on the following platform: 
   - Android (manually loading the .apk)
   - Chrome
-
-## Scans
-### osv-scanner
-```
-Starting filesystem walk for root: /
-Scanned /home/flutter-calendar/flutter_lunar_calendar/pubspec.lock file and found 42 packages
-End status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 1.635042ms elapsed, 1.635ms wall time
-No issues found
-```
-
-### gitleaks
-```
-    ○
-    │╲
-    │ ○
-    ○ ░
-    ░    gitleaks
-
-5:12PM INF 6 commits scanned.
-5:12PM INF scanned ~204488 bytes (204.49 KB) in 272ms
-5:12PM INF no leaks found
-```
-
-### trivy
-```
-Report Summary
-
-┌─────────────────────────────────────────────────┬──────┬─────────────────┬─────────┐
-│                     Target                      │ Type │ Vulnerabilities │ Secrets │
-├─────────────────────────────────────────────────┼──────┼─────────────────┼─────────┤
-│ .dart_tool/widget_preview_scaffold/pubspec.lock │ pub  │        0        │    -    │
-├─────────────────────────────────────────────────┼──────┼─────────────────┼─────────┤
-│ pubspec.lock                                    │ pub  │        0        │    -    │
-└─────────────────────────────────────────────────┴──────┴─────────────────┴─────────┘
-Legend:
-- '-': Not scanned
-- '0': Clean (no security findings detected)
-```
 
 ## Acknowledgements
 - [Tyme](https://pub.dev/packages/tyme) for providing the lunar calendar flutter package.
