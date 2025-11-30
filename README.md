@@ -47,6 +47,30 @@ flutter build apk
   - Android (manually loading the .apk)
   - Chrome
 
+## Scans
+### osv-scanner
+```
+Starting filesystem walk for root: /
+Scanned /home/flutter-calendar/flutter_lunar_calendar/pubspec.lock file and found 42 packages
+End status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 1.635042ms elapsed, 1.635ms wall time
+No issues found
+```
+
+### gitleaks
+```
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
+
+5:12PM INF 6 commits scanned.
+5:12PM INF scanned ~204488 bytes (204.49 KB) in 272ms
+5:12PM INF no leaks found
+```
+
+### trivy
+
 
 ## Acknowledgements
 - [Tyme](https://pub.dev/packages/tyme) for providing the lunar calendar flutter package.
